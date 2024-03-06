@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body class="mx-4">
+    <div class="flex flex-col lg:flex-row gap-4 justify-center my-10">
+        <input id="product-name" type="text" placeholder="Product" class="input input-bordered w-full max-w-xs" />
+        <input id="product-quantity" type="text" placeholder="Quantity" class="input input-bordered w-full max-w-xs" />
+        <button onclick="addProduct()" class="btn btn-active">Add</button>
+    </div>
+    <div class="flex justify-center" >
+        <div class="card w-96 bg-base-100 shadow-lg">
+            <div class="card-body">
+                <!-- table -->
+                <div class="overflow-x-auto">
+                    <table id="product-container" class="table">
+                        <!-- head -->
+                        <thead>
+                            <tr>
+
+                                <th>Name</th>
+                                <th>Quantity</th>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- row 1 -->
+                            <!-- <tr>
+
+                                <td>Mobile</td>
+                                <td>30</td>
+
+                            </tr> -->
+
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="jsFile/cart.js"></script>
+</body>
+
+</html>
